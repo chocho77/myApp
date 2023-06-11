@@ -1,0 +1,15 @@
+<p>component0ne works!</p>
+
+<input type="text" [(ngModel)] = "userName" (keyup.enter) = "onKeyup()" />
+<input type="text" [value]="textValue" (keyup.enter) = "onKeyup()" />
+<input type="text" [(ngModel)] = 'textValue' (keyup.enter) = "onKeyup()" />
+<p>Name : {{userName}}</p>
+<p>textValue : {{textValue}}</p>
+<br/>
+    <label>Number 1 : </label>
+    <input type="number" [(ngModel)] = "userInput" />
+    <label>Number 2 : </label>
+    <input type="number" [(ngModel)] = "userInput01" />
+    
+    <p>Result : {{result}}</p>
+    <button (click) = "buttonClick()">Click Me!</button>
